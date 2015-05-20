@@ -81,7 +81,7 @@ namespace FileSearcher
         {
             string path  = listResult.SelectedItem.ToString();
             FileInfo file = new FileInfo(path);
-            System.Diagnostics.Process.Start(file.DirectoryName);
+            System.Diagnostics.Process.Start(file.FullName);
         }
 
     }
